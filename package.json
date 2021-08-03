@@ -1,10 +1,10 @@
 {
-  "name": "kynd",
+  "name": "ProServices",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/styles.css -o build/styles.css"
+    "build": "postcss css/styles.css -o src/styles.css"
   },
   "keywords": [],
   "author": "",
