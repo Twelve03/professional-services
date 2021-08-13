@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Services</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <link rel="icon" type="image/x-icon" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Glide.js (slider) -->
+    <link rel="stylesheet" href="./assets/css/glide.core.min.css" />
+    <link rel="stylesheet" href="./assets/css/glide.theme.min.css" />
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Professional Services</title>
+  </head>
+  <body>
+    <header
+      class="
+        fixed
+        md:shadow
+        z-50
+        w-full
+        bg-white bg-opacity-50
+        flex
+        justify-between
+        items-center
+        h-12
+      "
+    >
+      <!-- Menu Icon -->
+      <i
+        class="ml-4 cursor-pointer text-xl fa fa-bars md:hidden"
+        id="menuBtn"
+        onclick="navToggle();"
+      ></i>
+
+      <!-- Mask -->
+      <div
+        class="
+          hidden
+          bg-black bg-opacity-60
+          fixed
+          top-0
+          left-0
+          w-full
+          h-full
+          z-10
+        "
+        id="mask"
+        onclick="navToggle();"
+      ></div>
+
+      <!-- Navigation -->
+      <nav
+        class="
+          hidden
+          absolute
+          top-0
+          bg-white
+          w-full
+          h-48
+          z-50
+          h-auto
+          md:static md:block md:h-14 md:bg-opacity-0 md:h-auto md:w-auto
+        "
+        id="menu"
+      >
+        <!-- Navigation Links -->
+        <div class="flex flex-col items-center md:flex-row">
+          <a class="py-3 block" href="index.html">Home</a>
+          <a class="py-3 block" href="">Partners</a>
+          <a class="py-3 block" href="contact.html">Contact us</a>
+        </div>
+      </nav>
+
+      <!-- Logo -->
+      <a href="index.html">
+        <img
+          src="https://placeholderlogo.com/img/placeholder-logo-1.png"
+          alt=""
+          class="w-24 mr-2"
+        />
+      </a>
+    </header>
+
+    <div>
+      <!-- Landing page -->
+      <div class="h-screen">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div
+                  style="background-image: url('./assets/img/hero-img1.jpg')"
+                  class="p-8 h-screen bg-cover bg-center text-white"
+                >
+                  <div class="mt-10">
+                    <p class="text-4xl mb-4">Creative Solutions</p>
+                    <p class="text-xl mb-4">
+                      Make your website look perfect with as little as possible.
+                      Just contact us!
+                    </p>
+                    <button class="bg-red-400 rounded-full p-2">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div
+                  style="background-image: url('./assets/img/hero-img2.jpg')"
+                  class="p-8 h-screen bg-cover bg-center text-white"
+                >
+                  <div class="mt-10">
+                    <p class="text-4xl mb-4">Creative Solutions</p>
+                    <p class="text-xl mb-4">
+                      Make your website look perfect with as little as possible.
+                      Just contact us!
+                    </p>
+                    <button class="bg-red-400 rounded-full p-2">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div
+                  style="background-image: url('./assets/img/hero-img3.jpg')"
+                  class="p-8 h-screen bg-cover bg-center text-white"
+                >
+                  <div class="mt-10">
+                    <p class="text-4xl mb-4">Creative Solutions</p>
+                    <p class="text-xl mb-4">
+                      Make your website look perfect with as little as possible.
+                      Just contact us!
+                    </p>
+                    <button class="bg-red-400 rounded-full p-2">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              prev
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="h-screen"></div>
+    </div>
+    <!-- Glide.js (slider) -->
+    <script src="https://unpkg.com/@glidejs/glide"></script>
+    <script>
+      new Glide(".glide").mount();
+    </script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
