@@ -231,11 +231,103 @@
           </div>
         </div>
       </div>
+      <div
+        style="background-color: #2e3253; height: 200vh"
+        class="relative min-h-screen bg-center bg-cover"
+      >
+        <img src="./assets/img/top-triangle.png" class="w-full" alt="" />
+        <img
+          src="./assets/img/mobile-cut.png"
+          alt=""
+          class="
+            h-1/4
+            absolute
+            bottom-0
+            left-1/2
+            transform
+            -translate-x-1/2
+            lg:h-2/4 lg:-translate-x-0 lg:left-0 lg:bottom-20
+          "
+        />
+        <img
+          src="./assets/img/bottom-triangle.png"
+          alt=""
+          class="absolute bottom-0 w-full"
+        />
+      </div>
+      <div class="px-7 flex flex-col items-left">
+        <p class="mb-2">OUR VALUES</p>
+        <div class="h-1 w-12 bg-red-400 mb-6"></div>
+        <p class="mb-14">
+          Pro molestie voluptatum at, id qui simul mollis perfecto. Mei te
+          ridens possit, ei has vide paulo vituperatoribus. Vis ea audire
+          phaedrum, quis sale dicunt eam in, vim ne laoreet delicata patrioque.
+          Qui ornatus recusabo suavitate cu, no usu unum solum honestatis.
+          Bonorum appareat inimicus an est, ad eam choro malorum delenit. Erat
+          dolor voluptua ex vim.
+        </p>
+        <img src="./assets/img/stats.png" alt="" class="mb-24 h-72 w-64" />
+        <div style="height: 3px" class="w-11/12 bg-gray-200 self-center"></div>
+      </div>
+      <div class="flex flex-col items-center mt-20">
+        <p>WHY OUR CUSTOMERS RETURN TO US</p>
+        <p class="mb-2">THE TRUE STORY</p>
+        <div style="height: 3px" class="w-28 bg-gray-200 mb-4"></div>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="p-8 flex flex-col justify-center items-center">
+                  <q class="text-3xl text-center">
+                    No dolores noluisse eos, id vim vivendum abhorreant
+                    constituam. Id mea principes dissentiunt, qui et aeterno
+                    aliquam conclusionemque. Ex mel omnesque patrioque
+                    incorrupte, in vix cetero philosophia. Ut amet admodum usu.
+                    Sit habemus gubergren at, ad eirmod feugait corrumpit his.
+                  </q>
+                  <p>John Doe, Senior Designer</p>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="p-8 flex flex-col justify-center items-center">
+                  <q class="text-3xl text-center">
+                    No dolores noluisse eos, id vim vivendum abhorreant
+                    constituam. Id mea principes dissentiunt, qui et aeterno
+                    aliquam conclusionemque. Ex mel omnesque patrioque
+                    incorrupte, in vix cetero philosophia. Ut amet admodum usu.
+                    Sit habemus gubergren at, ad eirmod feugait corrumpit his.
+                  </q>
+                  <p>John Doe, Senior Designer</p>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="p-8 flex flex-col justify-center items-center">
+                  <q class="text-3xl text-center">
+                    No dolores noluisse eos, id vim vivendum abhorreant
+                    constituam. Id mea principes dissentiunt, qui et aeterno
+                    aliquam conclusionemque. Ex mel omnesque patrioque
+                    incorrupte, in vix cetero philosophia. Ut amet admodum usu.
+                    Sit habemus gubergren at, ad eirmod feugait corrumpit his.
+                  </q>
+                  <p>John Doe, Senior Designer</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="h-screen"></div>
     </div>
     <!-- Glide.js (slider) -->
     <script src="https://unpkg.com/@glidejs/glide"></script>
     <script>
-      new Glide(".glide").mount();
+      const sliders = document.querySelectorAll(".glide");
+      const conf = {
+        autoplay: 5000,
+      };
+      sliders.forEach((item) => {
+        new Glide(item, conf).mount();
+      });
     </script>
     <script src="./assets/js/script.js"></script>
   </body>
