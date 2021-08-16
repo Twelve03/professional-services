@@ -93,9 +93,11 @@
     <div>
       <!-- Landing page -->
       <div class="h-screen">
+        <!-- Slider -->
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
+              <!-- Slide 1 -->
               <li class="glide__slide">
                 <div
                   style="background-image: url('./assets/img/hero-img1.jpg')"
@@ -113,6 +115,8 @@
                   </div>
                 </div>
               </li>
+
+              <!-- Slide 2 -->
               <li class="glide__slide">
                 <div
                   style="background-image: url('./assets/img/hero-img2.jpg')"
@@ -130,6 +134,8 @@
                   </div>
                 </div>
               </li>
+
+              <!-- Slide 3 -->
               <li class="glide__slide">
                 <div
                   style="background-image: url('./assets/img/hero-img3.jpg')"
@@ -160,7 +166,7 @@
         </div>
       </div>
 
-      <!-- Projects -->
+      <!-- Projects section -->
       <div class="p-8 md:p-6 flex flex-col items-center min-h-screen">
         <div class="mt-10 mb-10">
           <p>OUR LATEST PROJECTS</p>
@@ -231,9 +237,11 @@
           </div>
         </div>
       </div>
+
+      <!-- Features section -->
       <div
         style="background-color: #2e3253; height: 200vh"
-        class="relative min-h-screen bg-center bg-cover"
+        class="relative min-h-screen"
       >
         <img src="./assets/img/top-triangle.png" class="w-full" alt="" />
         <img
@@ -255,6 +263,8 @@
           class="absolute bottom-0 w-full"
         />
       </div>
+
+      <!-- Values section -->
       <div class="px-7 flex flex-col items-left">
         <p class="mb-2">OUR VALUES</p>
         <div class="h-1 w-12 bg-red-400 mb-6"></div>
@@ -269,13 +279,18 @@
         <img src="./assets/img/stats.png" alt="" class="mb-24 h-72 w-64" />
         <div style="height: 3px" class="w-11/12 bg-gray-200 self-center"></div>
       </div>
+
+      <!-- Testimonials section  -->
       <div class="flex flex-col items-center mt-20">
         <p>WHY OUR CUSTOMERS RETURN TO US</p>
         <p class="mb-2">THE TRUE STORY</p>
         <div style="height: 3px" class="w-28 bg-gray-200 mb-4"></div>
+
+        <!-- Slider -->
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
+              <!-- Slide 1 -->
               <li class="glide__slide">
                 <div class="p-8 flex flex-col justify-center items-center">
                   <q class="text-3xl text-center">
@@ -288,6 +303,8 @@
                   <p>John Doe, Senior Designer</p>
                 </div>
               </li>
+
+              <!-- Slide 2 -->
               <li class="glide__slide">
                 <div class="p-8 flex flex-col justify-center items-center">
                   <q class="text-3xl text-center">
@@ -300,6 +317,8 @@
                   <p>John Doe, Senior Designer</p>
                 </div>
               </li>
+
+              <!-- Slide 3 -->
               <li class="glide__slide">
                 <div class="p-8 flex flex-col justify-center items-center">
                   <q class="text-3xl text-center">
@@ -316,8 +335,86 @@
           </div>
         </div>
       </div>
-      <div class="h-screen"></div>
+
+      <!-- Video section -->
+      <div
+        style="background-color: #49e1eb"
+        class="relative min-h-screen mt-10"
+      >
+        <img src="./assets/img/top-triangle1.png" alt="" class="w-full" />
+        <div class="flex flex-col items-center mb-28">
+          <p class="text-5xl text-center text-white mt-14 mb-10">
+            See our small representational video
+          </p>
+          <iframe
+            src="https://www.youtube.com/embed/Celf7jSGtNc"
+            class="w-3/4 h-80 rounded-lg"
+          >
+          </iframe>
+        </div>
+        <img src="./assets/img/bottom-triangle1.png" alt="" class="w-full" />
+      </div>
+
+      <!-- Call To Action section -->
+      <div class="flex flex-col items-center">
+        <div
+          class="
+            mt-10
+            flex flex-col
+            items-center
+            w-4/5
+            justify-around
+            md:flex-row
+          "
+        >
+          <!-- Card 1 -->
+          <div class="flex mb-10">
+            <div class="m-4 h-8 w-8 bg-red-300"></div>
+            <div class="flex flex-col w-full">
+              <p>FULLY RESPONSIVE</p>
+              <p>
+                Nam ut malis scaevola moderatius, usu malorum verterem ei. Cu
+                sea autem tollit appellantur, ei usu elitr sadipscing, no usu
+                autem lorem tation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flex mb-10">
+            <div class="m-4 h-8 w-8 bg-red-300"></div>
+            <div class="flex flex-col w-full">
+              <p>FULLY RESPONSIVE</p>
+              <p>
+                Nam ut malis scaevola moderatius, usu malorum verterem ei. Cu
+                sea autem tollit appellantur, ei usu elitr sadipscing, no usu
+                autem lorem tation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flex mb-10">
+            <div class="m-4 h-8 w-8 bg-red-300"></div>
+            <div class="flex flex-col w-full">
+              <p>FULLY RESPONSIVE</p>
+              <p>
+                Nam ut malis scaevola moderatius, usu malorum verterem ei. Cu
+                sea autem tollit appellantur, ei usu elitr sadipscing, no usu
+                autem lorem tation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="bg-red-300 mt-10 mb-10">Contact us</button>
+
+        <img src="./assets/img/footer-triangle.png" alt="" class="w-full" />
+      </div>
     </div>
+
+    <footer style="background-color: #171a1f" class="h-screen"></footer>
+
     <!-- Glide.js (slider) -->
     <script src="https://unpkg.com/@glidejs/glide"></script>
     <script>
@@ -329,6 +426,7 @@
         new Glide(item, conf).mount();
       });
     </script>
+    <!-- Main js -->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
