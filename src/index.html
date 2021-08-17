@@ -24,19 +24,39 @@
     <header
       class="
         fixed
-        md:shadow
         z-50
         w-full
-        bg-white bg-opacity-50
+        bg-white bg-opacity-0
         flex
         justify-between
         items-center
         h-12
       "
     >
+      <!-- Scroll to top button -->
+      <i
+        class="
+          fa fa-chevron-up
+          hidden
+          fixed
+          bottom-7
+          right-7
+          cursor-pointer
+          z-10
+          text-xl
+          px-2
+          py-1
+          shadow
+          bg-white
+          rounded-sm
+        "
+        onclick="topFunction()"
+        id="scrollTopBtn"
+      ></i>
+
       <!-- Menu Icon -->
       <i
-        class="ml-4 cursor-pointer text-xl fa fa-bars md:hidden"
+        class="text-white ml-5 cursor-pointer text-xl fa fa-bars md:hidden"
         id="menuBtn"
         onclick="navToggle();"
       ></i>
@@ -68,15 +88,44 @@
           h-48
           z-50
           h-auto
-          md:static md:block md:h-14 md:bg-opacity-0 md:h-auto md:w-auto
+          md:static
+          md:block
+          md:h-14
+          md:bg-opacity-0
+          md:h-auto
+          md:w-auto
+          md:w-2/4
+          md:ml-8
         "
         id="menu"
       >
+        <div
+          style="background-color: #222224"
+          class="flex justify-center items-center h-20 text-white md:hidden"
+        >
+          <p>MENU</p>
+        </div>
         <!-- Navigation Links -->
-        <div class="flex flex-col items-center md:flex-row">
-          <a class="py-3 block" href="index.html">Home</a>
-          <a class="py-3 block" href="">Partners</a>
-          <a class="py-3 block" href="contact.html">Contact us</a>
+        <div
+          class="
+            flex flex-col
+            items-center
+            w-full
+            font-semibold
+            md:flex-row
+            md:justify-around
+            md:text-white
+            md:tracking-wider
+            md:text-xs
+          "
+          id="navLinks"
+        >
+          <a class="py-3 block" href="index.html">HOME</a>
+          <a class="py-3 block" href="">PARTNERS</a>
+          <a class="py-3 block" href="">PAGES</a>
+          <a class="py-3 block" href="">PORTFOLIO</a>
+          <a class="py-3 block" href="">BLOG</a>
+          <a class="py-3 block" href="contact.html">CONTACT</a>
         </div>
       </nav>
 
@@ -85,7 +134,7 @@
         <img
           src="https://placeholderlogo.com/img/placeholder-logo-1.png"
           alt=""
-          class="w-24 mr-2"
+          class="w-24 mr-7"
         />
       </a>
     </header>
@@ -101,13 +150,23 @@
               <li class="glide__slide">
                 <div
                   style="background-image: url('./assets/img/hero-img1.jpg')"
-                  class="p-8 h-screen bg-cover bg-center text-white"
+                  class="
+                    flex
+                    items-center
+                    p-8
+                    h-screen
+                    bg-cover bg-center
+                    text-white
+                  "
                 >
-                  <div class="mt-10">
-                    <p class="text-4xl mb-4">Creative Solutions</p>
+                  <div class="mt-10 md:w-3/5">
+                    <p class="text-4xl mb-4 font-extrabold">
+                      Creative Solutions
+                    </p>
                     <p class="text-xl mb-4">
-                      Make your website look perfect with as little as possible.
-                      Just contact us!
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nesciunt quas incidunt delectus, nihil sunt dolore
+                      voluptates autem maiores neque rerum ipsum nobis maxime
                     </p>
                     <button class="bg-red-400 rounded-full p-2">
                       Learn More
@@ -120,13 +179,23 @@
               <li class="glide__slide">
                 <div
                   style="background-image: url('./assets/img/hero-img2.jpg')"
-                  class="p-8 h-screen bg-cover bg-center text-white"
+                  class="
+                    p-8
+                    h-screen
+                    bg-cover bg-center
+                    text-white
+                    flex
+                    items-center
+                  "
                 >
-                  <div class="mt-10">
-                    <p class="text-4xl mb-4">Creative Solutions</p>
+                  <div class="mt-10 md:w-3/5">
+                    <p class="text-4xl mb-4 font-extrabold">
+                      Creative Solutions
+                    </p>
                     <p class="text-xl mb-4">
-                      Make your website look perfect with as little as possible.
-                      Just contact us!
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nesciunt quas incidunt delectus, nihil sunt dolore
+                      voluptates autem maiores neque rerum ipsum nobis maxime
                     </p>
                     <button class="bg-red-400 rounded-full p-2">
                       Learn More
@@ -139,13 +208,23 @@
               <li class="glide__slide">
                 <div
                   style="background-image: url('./assets/img/hero-img3.jpg')"
-                  class="p-8 h-screen bg-cover bg-center text-white"
+                  class="
+                    p-8
+                    h-screen
+                    bg-cover bg-center
+                    text-white
+                    flex
+                    items-center
+                  "
                 >
-                  <div class="mt-10">
-                    <p class="text-4xl mb-4">Creative Solutions</p>
+                  <div class="mt-10 md:w-3/5">
+                    <p class="text-4xl mb-4 font-extrabold">
+                      Creative Solutions
+                    </p>
                     <p class="text-xl mb-4">
-                      Make your website look perfect with as little as possible.
-                      Just contact us!
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nesciunt quas incidunt delectus, nihil sunt dolore
+                      voluptates autem maiores neque rerum ipsum nobis maxime
                     </p>
                     <button class="bg-red-400 rounded-full p-2">
                       Learn More
@@ -154,14 +233,6 @@
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-              prev
-            </button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-              next
-            </button>
           </div>
         </div>
       </div>
@@ -414,7 +485,9 @@
     </div>
 
     <footer style="background-color: #171a1f" class="flex flex-col">
-      <div class="px-7 mt-7 flex flex-col md:flex-row justify-around">
+      <div
+        class="px-7 mt-7 flex flex-col justify-around md:flex-row md:flex-wrap"
+      >
         <div class="flex flex-col">
           <p class="tracking-wider text-white">CATEGORIES</p>
           <p class="mt-3 tracking-wide text-gray-400">Articles</p>
@@ -426,7 +499,7 @@
         </div>
 
         <div class="flex flex-col">
-          <p class="mt-20 text-white">RECENT POSTS</p>
+          <p class="mt-20 text-white md:mt-0">RECENT POSTS</p>
           <p class="mt-3 tracking-wide text-gray-400">Urban life</p>
           <p class="text-gray-600">01/01/01</p>
           <p class="mt-2 tracking-wide text-gray-400">On the way home</p>
@@ -438,7 +511,7 @@
         </div>
 
         <div class="flex flex-col">
-          <p class="mt-20 text-white">PHOTOS</p>
+          <p class="mt-20 text-white md:mt-0">PHOTOS</p>
           <div class="flex flex-wrap items-center w-11/12 md:w-64">
             <div class="mr-3 h-14 w-14 bg-blue-400"></div>
             <div class="mr-3 h-14 w-14 bg-gray-400"></div>
@@ -452,7 +525,7 @@
         </div>
 
         <div class="flex flex-col">
-          <p class="mt-20 text-white">TAGS</p>
+          <p class="mt-20 text-white md:mt-0">TAGS</p>
           <div class="flex flex-wrap items-center w-11/12 md:w-64">
             <div
               class="
@@ -493,7 +566,7 @@
         "
       >
         <p style="font-size: 0.75rem" class="font-semibold text-gray-400">
-          © 2021 - EDUCATION PURPOSES ONLY
+          © 2021 - FOR EDUCATION PURPOSES ONLY
         </p>
       </div>
     </footer>
