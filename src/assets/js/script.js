@@ -2,6 +2,9 @@
 function navToggle() {
   const nav = document.getElementById("menu");
   const mask = document.getElementById("mask");
+  // Close drop-downs before oppening the menu
+  const dropDowns = document.querySelectorAll(".dropdown");
+  dropDowns.forEach((option) => option.classList.add("hidden"));
   nav.classList.toggle("hidden");
   mask.classList.toggle("hidden");
 }
@@ -12,7 +15,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// Change header colors and show Scroll-To-Top button.
+// Change header colors and show Scroll-To-Top button
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
   const menuBtn = document.getElementById("menuBtn");
@@ -39,3 +42,23 @@ window.addEventListener("scroll", () => {
     scrollTopBtn.classList.add("hidden");
   }
 });
+
+function dropDown(a) {
+  const dropDowns = document.querySelectorAll(".dropdown");
+  const array = Array.prototype.slice.call(dropDowns);
+
+  // Show mask when a drop-down is open, so we can click it to close it
+  const mask = document.getElementById("mask");
+  mask.classList.remove("hidden");
+
+  // Don't show 2 drop-downs at the same time
+  array.forEach((option) => {
+    if (array.indexOf(option) == a) {
+      // Show the one we are clicking on.
+      option.classList.toggle("hidden");
+    } else {
+      // Close the rest.
+      option.classList.add("hidden");
+    }
+  });
+}

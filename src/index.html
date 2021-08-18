@@ -121,11 +121,106 @@
           id="navLinks"
         >
           <a class="py-3 block" href="index.html">HOME</a>
-          <a class="py-3 block" href="">PARTNERS</a>
-          <a class="py-3 block" href="">PAGES</a>
-          <a class="py-3 block" href="">PORTFOLIO</a>
-          <a class="py-3 block" href="">BLOG</a>
-          <a class="py-3 block" href="contact.html">CONTACT</a>
+          <div class="flex flex-col items-center md:block">
+            <p class="py-3 block" onclick="dropDown('0')">PARTNERS</p>
+            <div
+              class="
+                hidden
+                flex flex-col
+                bg-gray-400
+                w-40
+                mt-1
+                dropdown
+                md:absolute md:w-72
+              "
+              onclick="navToggle();"
+            >
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+            </div>
+          </div>
+          <div class="flex flex-col items-center md:block">
+            <p class="py-3 block" onclick="dropDown('1')">PORTFOLIO</p>
+            <div
+              class="
+                hidden
+                flex flex-col
+                bg-gray-400
+                w-40
+                mt-1
+                dropdown
+                md:absolute md:w-32
+              "
+              onclick="navToggle();"
+            >
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+            </div>
+          </div>
+          <div class="flex flex-col items-center md:block">
+            <p class="py-3 block" onclick="dropDown('2')">CONTACT</p>
+            <div
+              class="
+                hidden
+                flex flex-col
+                bg-gray-400
+                w-40
+                mt-1
+                dropdown
+                md:absolute md:w-32
+              "
+              onclick="navToggle();"
+            >
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+            </div>
+          </div>
+          <div class="flex flex-col items-center md:block">
+            <p class="py-3 block" onclick="dropDown('3')">BLOG</p>
+            <div
+              class="
+                hidden
+                flex flex-col
+                bg-gray-400
+                w-40
+                mt-1
+                dropdown
+                md:absolute md:w-32
+              "
+              onclick="navToggle();"
+            >
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+            </div>
+          </div>
+          <div class="flex flex-col items-center md:block">
+            <p class="py-3 block" onclick="dropDown('4')">PAGES</p>
+            <div
+              class="
+                hidden
+                flex flex-col
+                bg-gray-400
+                w-40
+                mt-1
+                dropdown
+                md:absolute md:w-32
+              "
+              onclick="navToggle();"
+            >
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+              <a href="" class="p-2 block">Lorem ipsum</a>
+            </div>
+          </div>
         </div>
       </nav>
 
@@ -410,7 +505,7 @@
       <!-- Video section -->
       <div
         style="background-color: #49e1eb"
-        class="relative min-h-screen mt-10"
+        class="relative min-h-screen mt-14"
       >
         <img src="./assets/img/top-triangle1.png" alt="" class="w-full" />
         <div class="flex flex-col items-center mb-28">
