@@ -566,12 +566,20 @@
       </div>
 
       <!-- Values section -->
-      <div class="px-7 flex flex-col items-left">
-        <p class="mb-2 tracking-wide text-2xl font-extrabold text-gray-700">
+      <div
+        class="
+          mt-10
+          px-7
+          flex flex-col
+          items-left
+          xl:items-center xl:justify-center
+        "
+      >
+        <p class="mb-2 tracking-wide text-2xl font-bold text-gray-700">
           OUR VALUES
         </p>
         <div class="h-1 w-16 bg-red-400 mb-6"></div>
-        <p class="mb-14 text-gray-400">
+        <p style="max-width: 1300px" class="mb-14 text-gray-400">
           Pro molestie voluptatum at, id qui simul mollis perfecto. Mei te
           ridens possit, ei has vide paulo vituperatoribus. Vis ea audire
           phaedrum, quis sale dicunt eam in, vim ne laoreet delicata patrioque.
@@ -580,7 +588,10 @@
           dolor voluptua ex vim.
         </p>
         <img src="./assets/img/stats.png" alt="" class="mb-24 h-72 w-64" />
-        <div style="height: 3px" class="w-11/12 bg-gray-200 self-center"></div>
+        <div
+          style="height: 3px"
+          class="w-11/12 bg-gray-200 self-center xl:w-4/5"
+        ></div>
       </div>
 
       <!-- Testimonials section  -->
@@ -605,7 +616,7 @@
         <div style="height: 2px" class="w-32 bg-gray-200 mb-4"></div>
 
         <!-- Slider -->
-        <div class="glide">
+        <div style="max-width: 1300px" class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <!-- Slide 1 -->
@@ -693,16 +704,18 @@
       <!-- Video section -->
       <div
         style="background-color: #49e1eb"
-        class="relative min-h-screen mt-14"
+        class="mt-14"
       >
         <img src="./assets/img/top-triangle1.png" alt="" class="w-full" />
         <div class="flex flex-col items-center mb-28">
-          <p class="text-4xl text-center text-white mt-14 mb-10">
+          <p
+            class="text-5xl text-center text-white mt-14 mb-10 font-extralight"
+          >
             See our small representational video
           </p>
           <iframe
             src="https://www.youtube.com/embed/Celf7jSGtNc"
-            class="w-3/4 h-80 rounded-lg"
+            class="w-3/4 h-80 rounded-lg md:w-2/4 xl:w-1/4"
           >
           </iframe>
         </div>
@@ -710,23 +723,30 @@
       </div>
 
       <!-- Call To Action section -->
-      <div class="flex flex-col items-center">
+      <div class="mt-10 flex flex-col items-center">
         <div
+          style="max-width: 1300px"
           class="
+            px-8
             mt-10
             flex flex-col
             items-center
-            w-4/5
             justify-around
-            md:flex-row
+            md:flex-col
+            lg:flex-row
           "
         >
           <!-- Card 1 -->
-          <div class="flex mb-10">
-            <div class="m-4 h-8 w-8 bg-red-300"></div>
-            <div class="flex flex-col w-full">
-              <p>FULLY RESPONSIVE</p>
-              <p>
+          <div class="flex mb-10 w-full">
+            <div
+              style="background-color: #f65d83"
+              class="my-2 mr-8 h-7 w-7"
+            ></div>
+            <div class="flex flex-col w-3/4">
+              <p class="tracking-wider text-sm font-bold mb-1 text-gray-600">
+                FULLY RESPONSIVE
+              </p>
+              <p class="text-sm text-gray-400 leading-7">
                 Nam ut malis scaevola moderatius, usu malorum verterem ei. Cu
                 sea autem tollit appellantur, ei usu elitr sadipscing, no usu
                 autem lorem tation.
@@ -735,11 +755,16 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="flex mb-10">
-            <div class="m-4 h-8 w-8 bg-red-300"></div>
-            <div class="flex flex-col w-full">
-              <p>FULLY RESPONSIVE</p>
-              <p>
+          <div class="flex mb-10 w-full">
+            <div
+              style="background-color: #f65d83"
+              class="my-2 mr-8 h-7 w-7"
+            ></div>
+            <div class="flex flex-col w-3/4">
+              <p class="tracking-wider text-sm font-bold mb-1 text-gray-600">
+                FUNCTIONAL SHORTCODES
+              </p>
+              <p class="text-sm text-gray-400 leading-7">
                 Nam ut malis scaevola moderatius, usu malorum verterem ei. Cu
                 sea autem tollit appellantur, ei usu elitr sadipscing, no usu
                 autem lorem tation.
@@ -748,11 +773,16 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="flex mb-10">
-            <div class="m-4 h-8 w-8 bg-red-300"></div>
-            <div class="flex flex-col w-full">
-              <p>FULLY RESPONSIVE</p>
-              <p>
+          <div class="mb-10 flex w-full">
+            <div
+              style="background-color: #f65d83"
+              class="my-2 mr-8 h-7 w-7"
+            ></div>
+            <div class="flex flex-col w-3/4">
+              <p class="tracking-wider text-sm font-bold mb-1 text-gray-600">
+                BEST SHORTCODE PRACTICES
+              </p>
+              <p class="text-sm text-gray-400 leading-7">
                 Nam ut malis scaevola moderatius, usu malorum verterem ei. Cu
                 sea autem tollit appellantur, ei usu elitr sadipscing, no usu
                 autem lorem tation.
@@ -761,7 +791,23 @@
           </div>
         </div>
 
-        <button class="bg-red-300 mt-10 mb-10">Contact us</button>
+        <button
+          style="color: #fd7093; border-color: #f65d83"
+          class="
+            mt-7
+            text-xs
+            tracking-widest
+            font-bold
+            border-2
+            mb-20
+            w-48
+            h-10
+            rounded-full
+            md:w-1/4
+          "
+        >
+          CONTACT US
+        </button>
 
         <img src="./assets/img/footer-triangle.png" alt="" class="w-full" />
       </div>
@@ -769,10 +815,18 @@
 
     <footer style="background-color: #171a1f" class="flex flex-col">
       <div
-        class="px-7 mt-7 flex flex-col justify-around md:flex-row md:flex-wrap"
+        style="max-width: 1300px"
+        class="
+          px-7
+          mt-7
+          flex flex-col
+          justify-around
+          md:flex-row md:flex-wrap
+          lg:px-1
+        "
       >
         <div class="flex flex-col">
-          <p class="tracking-wider text-white">CATEGORIES</p>
+          <p class="tracking-widest text-white font-semibold">CATEGORIES</p>
           <p class="mt-3 tracking-wide text-gray-400">Articles</p>
           <p class="mt-2 tracking-wide text-gray-400">Business</p>
           <p class="mt-2 tracking-wide text-gray-400">Events</p>
@@ -782,7 +836,9 @@
         </div>
 
         <div class="flex flex-col">
-          <p class="mt-20 text-white md:mt-0">RECENT POSTS</p>
+          <p class="mt-20 tracking-widest text-white font-semibold md:mt-0">
+            RECENT POSTS
+          </p>
           <p class="mt-3 tracking-wide text-gray-400">Urban life</p>
           <p class="text-gray-600">01/01/01</p>
           <p class="mt-2 tracking-wide text-gray-400">On the way home</p>
@@ -794,43 +850,75 @@
         </div>
 
         <div class="flex flex-col">
-          <p class="mt-20 text-white md:mt-0">PHOTOS</p>
-          <div class="flex flex-wrap items-center w-11/12 md:w-64">
-            <div class="mr-3 h-14 w-14 bg-blue-400"></div>
-            <div class="mr-3 h-14 w-14 bg-gray-400"></div>
-            <div class="mr-3 h-14 w-14 bg-red-400"></div>
-            <div class="mr-3 h-14 w-14 bg-yellow-400"></div>
-            <div class="mr-3 h-14 w-14 bg-green-400"></div>
-            <div class="mr-3 h-14 w-14 bg-white"></div>
-            <div class="mr-3 h-14 w-14 bg-purple-400"></div>
+          <p class="mt-20 tracking-widest text-white font-semibold md:mt-0">
+            PHOTOS
+          </p>
+          <div
+            class="
+              grid grid-cols-5
+              gap-3
+              py-5
+              items-center
+              w-11/12
+              md:w-48 md:grid-cols-3 md:gap-2
+            "
+          >
+            <div class="h-14 w-14 bg-blue-400"></div>
+            <div class="h-14 w-14 bg-gray-400"></div>
+            <div class="h-14 w-14 bg-red-400"></div>
+            <div class="h-14 w-14 bg-yellow-400"></div>
+            <div class="h-14 w-14 bg-green-400"></div>
+            <div class="h-14 w-14 bg-white"></div>
+            <div class="h-14 w-14 bg-purple-400"></div>
             <div class="h-14 w-14 bg-red-900"></div>
           </div>
         </div>
 
         <div class="flex flex-col">
-          <p class="mt-20 text-white md:mt-0">TAGS</p>
-          <div class="flex flex-wrap items-center w-11/12 md:w-64">
-            <div
-              class="
-                flex
-                text-sm text-gray-400
-                px-3
-                h-8
-                mr-3
-                items-center
-                border
-                rounded-sm
-              "
+          <p class="mt-20 tracking-widest text-white font-semibold md:mt-0">
+            TAGS
+          </p>
+          <div class="py-4 grid grid-cols-3 gap-2 items-center">
+            <button
+              class="p-2 border text-white text-xs font-semibold tracking-wider"
             >
               BUSINESS
-            </div>
-            <div class="mr-3 h-14 w-14 bg-gray-400"></div>
-            <div class="mr-3 h-14 w-14 bg-red-400"></div>
-            <div class="mr-3 h-14 w-14 bg-yellow-400"></div>
-            <div class="mr-3 h-14 w-14 bg-green-400"></div>
-            <div class="mr-3 h-14 w-14 bg-white"></div>
-            <div class="mr-3 h-14 w-14 bg-purple-400"></div>
-            <div class="h-14 w-14 bg-red-900"></div>
+            </button>
+            <button
+              class="p-2 border text-white text-xs font-semibold tracking-wider"
+            >
+              DESIGN
+            </button>
+            <button
+              class="p-2 border text-white text-xs font-semibold tracking-wider"
+            >
+              WORLD
+            </button>
+            <button
+              class="p-2 border text-white text-xs font-semibold tracking-wider"
+            >
+              NATURE
+            </button>
+            <button
+              class="p-2 border text-white text-xs font-semibold tracking-wider"
+            >
+              MUSIC
+            </button>
+            <button
+              class="p-2 border text-white text-xs font-semibold tracking-wider"
+            >
+              PARTY
+            </button>
+            <button
+              class="p-2 border text-white text-xs font-semibold tracking-wider"
+            >
+              PEOPLE
+            </button>
+            <button
+              class="p-2 border text-white text-xs font-semibold tracking-wider"
+            >
+              RELAX
+            </button>
           </div>
         </div>
       </div>
@@ -846,6 +934,7 @@
           bg-gray-900
           justify-center
           md:justify-start
+          xl:justify-center
         "
       >
         <p style="font-size: 0.75rem" class="font-semibold text-gray-400">
