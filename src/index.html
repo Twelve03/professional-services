@@ -72,6 +72,7 @@
           w-full
           h-full
           z-10
+          md:opacity-0
         "
         id="mask"
         onclick="navToggle();"
@@ -95,7 +96,7 @@
           md:h-auto
           md:w-auto
           md:w-2/4
-          md:ml-8
+          md:ml-4
         "
         id="menu"
       >
@@ -103,11 +104,12 @@
           style="background-color: #222224"
           class="flex justify-center items-center h-20 text-white md:hidden"
         >
-          <p>MENU</p>
+          <p class="font-bold">MENU</p>
         </div>
         <!-- Navigation Links -->
         <div
           class="
+            p-5
             flex flex-col
             items-center
             w-full
@@ -117,6 +119,7 @@
             md:text-white
             md:tracking-wider
             md:text-xs
+            md:p-0
           "
           id="navLinks"
         >
@@ -125,13 +128,15 @@
             <p class="py-3 block" onclick="dropDown('0')">PARTNERS</p>
             <div
               class="
+                text-white
                 hidden
                 flex flex-col
-                bg-gray-400
                 w-40
                 mt-1
                 dropdown
-                md:absolute md:w-72
+                rounded-sm
+                bg-red-300
+                md:bg-gray-900 md:absolute md:w-72
               "
               onclick="navToggle();"
             >
@@ -145,13 +150,15 @@
             <p class="py-3 block" onclick="dropDown('1')">PORTFOLIO</p>
             <div
               class="
+                text-white
                 hidden
                 flex flex-col
-                bg-gray-400
                 w-40
                 mt-1
                 dropdown
-                md:absolute md:w-32
+                rounded-sm
+                bg-red-300
+                md:bg-gray-900 md:absolute md:w-72
               "
               onclick="navToggle();"
             >
@@ -165,13 +172,15 @@
             <p class="py-3 block" onclick="dropDown('2')">CONTACT</p>
             <div
               class="
+                text-white
                 hidden
                 flex flex-col
-                bg-gray-400
                 w-40
                 mt-1
                 dropdown
-                md:absolute md:w-32
+                rounded-sm
+                bg-red-300
+                md:bg-gray-900 md:absolute md:w-72
               "
               onclick="navToggle();"
             >
@@ -185,13 +194,15 @@
             <p class="py-3 block" onclick="dropDown('3')">BLOG</p>
             <div
               class="
+                text-white
                 hidden
                 flex flex-col
-                bg-gray-400
                 w-40
                 mt-1
                 dropdown
-                md:absolute md:w-32
+                rounded-sm
+                bg-red-300
+                md:bg-gray-900 md:absolute md:w-72
               "
               onclick="navToggle();"
             >
@@ -205,13 +216,15 @@
             <p class="py-3 block" onclick="dropDown('4')">PAGES</p>
             <div
               class="
+                text-white
                 hidden
                 flex flex-col
-                bg-gray-400
                 w-40
                 mt-1
                 dropdown
-                md:absolute md:w-32
+                rounded-sm
+                bg-red-300
+                md:bg-gray-900 md:absolute md:w-72
               "
               onclick="navToggle();"
             >
@@ -229,7 +242,7 @@
         <img
           src="https://placeholderlogo.com/img/placeholder-logo-1.png"
           alt=""
-          class="w-24 mr-7"
+          class="w-24 mr-5"
         />
       </a>
     </header>
@@ -258,12 +271,15 @@
                     <p class="text-4xl mb-4 font-extrabold">
                       Creative Solutions
                     </p>
-                    <p class="text-xl mb-4">
+                    <p class="tracking-wider text-lg font-light mb-4">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Nesciunt quas incidunt delectus, nihil sunt dolore
                       voluptates autem maiores neque rerum ipsum nobis maxime
                     </p>
-                    <button class="bg-red-400 rounded-full p-2">
+                    <button
+                      style="background-color: #ff677a"
+                      class="font-semibold text-sm w-24 h-8 rounded-sm"
+                    >
                       Learn More
                     </button>
                   </div>
@@ -287,12 +303,15 @@
                     <p class="text-4xl mb-4 font-extrabold">
                       Creative Solutions
                     </p>
-                    <p class="text-xl mb-4">
+                    <p class="tracking-wider text-lg font-light mb-4">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Nesciunt quas incidunt delectus, nihil sunt dolore
                       voluptates autem maiores neque rerum ipsum nobis maxime
                     </p>
-                    <button class="bg-red-400 rounded-full p-2">
+                    <button
+                      style="background-color: #ff677a"
+                      class="font-semibold text-sm w-24 h-8 rounded-sm"
+                    >
                       Learn More
                     </button>
                   </div>
@@ -316,12 +335,15 @@
                     <p class="text-4xl mb-4 font-extrabold">
                       Creative Solutions
                     </p>
-                    <p class="text-xl mb-4">
+                    <p class="tracking-wider text-lg font-light mb-4">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Nesciunt quas incidunt delectus, nihil sunt dolore
                       voluptates autem maiores neque rerum ipsum nobis maxime
                     </p>
-                    <button class="bg-red-400 rounded-full p-2">
+                    <button
+                      style="background-color: #ff677a"
+                      class="font-semibold text-sm w-24 h-8 rounded-sm"
+                    >
                       Learn More
                     </button>
                   </div>
@@ -334,9 +356,13 @@
 
       <!-- Projects section -->
       <div class="p-8 md:p-6 flex flex-col items-center min-h-screen">
-        <div class="mt-10 mb-10">
-          <p>OUR LATEST PROJECTS</p>
-          <p>CLICK IMAGE FOR MORE INFO</p>
+        <div class="flex flex-col items-center mt-10 mb-10">
+          <p class="tracking-wide text-2xl font-bold text-gray-700">
+            OUR LATEST PROJECTS
+          </p>
+          <p class="tracking-widest text-sm font-medium text-gray-400">
+            CLICK IMAGE FOR MORE INFO
+          </p>
         </div>
         <div
           style="max-width: 1300px"
@@ -355,13 +381,27 @@
               alt=""
               class="rounded-md h-56 mb-4 md:w-full md:h-full lg:h-56"
             />
-            <p class="mb-3">FIRST PROJECT</p>
-            <p class="mb-5">
+            <p class="mb-3 font-medium tracking-wider text-gray-600">
+              FIRST PROJECT
+            </p>
+            <p class="mb-5 text-md text-gray-400">
               Noster erroribus et est. Ignota dissentias usu an. His deserunt
               tincidunt maiestatis ex, mei malis ubique mediocritatem an. Te eum
               similique accommodare, et his rebum constituto quaerendum.
             </p>
-            <button class="text-white bg-red-400 w-28 h-8 mb-12">
+            <button
+              style="background-color: #ff677a"
+              class="
+                tracking-wider
+                text-white
+                bg-red-400
+                w-28
+                h-8
+                mb-12
+                text-xs
+                font-semibold
+              "
+            >
               MORE INFO
             </button>
           </div>
@@ -373,13 +413,27 @@
               alt=""
               class="rounded-md h-56 mb-4 md:w-full md:h-full lg:h-56"
             />
-            <p class="mb-3">SECOND PROJECT</p>
-            <p class="mb-5">
+            <p class="mb-3 font-medium tracking-wider text-gray-600">
+              FIRST PROJECT
+            </p>
+            <p class="mb-5 text-md text-gray-400">
               Noster erroribus et est. Ignota dissentias usu an. His deserunt
               tincidunt maiestatis ex, mei malis ubique mediocritatem an. Te eum
               similique accommodare, et his rebum constituto quaerendum.
             </p>
-            <button class="text-white bg-red-400 w-28 h-8 mb-12">
+            <button
+              style="background-color: #ff677a"
+              class="
+                tracking-wider
+                text-white
+                bg-red-400
+                w-28
+                h-8
+                mb-12
+                text-xs
+                font-semibold
+              "
+            >
               MORE INFO
             </button>
           </div>
@@ -391,13 +445,27 @@
               alt=""
               class="rounded-md h-56 mb-4 md:w-full md:h-full lg:h-56"
             />
-            <p class="mb-3">THIRD PROJECT</p>
-            <p class="mb-5">
+            <p class="mb-3 font-medium tracking-wider text-gray-600">
+              FIRST PROJECT
+            </p>
+            <p class="mb-5 text-md text-gray-400">
               Noster erroribus et est. Ignota dissentias usu an. His deserunt
               tincidunt maiestatis ex, mei malis ubique mediocritatem an. Te eum
               similique accommodare, et his rebum constituto quaerendum.
             </p>
-            <button class="text-white bg-red-400 w-28 h-8 mb-12">
+            <button
+              style="background-color: #ff677a"
+              class="
+                tracking-wider
+                text-white
+                bg-red-400
+                w-28
+                h-8
+                mb-12
+                text-xs
+                font-semibold
+              "
+            >
               MORE INFO
             </button>
           </div>
@@ -405,16 +473,81 @@
       </div>
 
       <!-- Features section -->
-      <div
-        style="background-color: #2e3253; height: 200vh"
-        class="relative min-h-screen"
-      >
+      <div style="background-color: #2e3253; height: 160vh" class="relative">
+        <!-- Top triangle separator -->
         <img src="./assets/img/top-triangle.png" class="w-full" alt="" />
+
+        <!-- Features -->
+        <div class="flex flex-col items-center mt-20 px-4">
+          <!-- Feature 1 -->
+          <div class="flex mb-10">
+            <div
+              style="background-color: #f65d83"
+              class="mx-4 h-14 w-16 rounded-full"
+            ></div>
+            <div class="flex flex-col w-full">
+              <p
+                style="color: #f65d83"
+                class="tracking-wide font-semibold mb-1"
+              >
+                OUTSTANDING QUALITY
+              </p>
+              <p class="text-white leading-7">
+                Solet dissentias mea et. At dictas eirmod nominavi per. Ei vel
+                elitr saepe, quo graeco lobortis concludaturque te.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="flex mb-10">
+            <div
+              style="background-color: #f65d83"
+              class="mx-4 h-14 w-16 rounded-full"
+            ></div>
+            <div class="flex flex-col w-full">
+              <p
+                style="color: #f65d83"
+                class="tracking-wide font-semibold mb-1"
+              >
+                LIGHTSPEED PERFORMANCE
+              </p>
+              <p class="text-white leading-7">
+                Solet dissentias mea et. At dictas eirmod nominavi per. Ei vel
+                elitr saepe, quo graeco lobortis concludaturque te.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="flex mb-10">
+            <div
+              style="background-color: #f65d83"
+              class="mx-4 h-14 w-16 rounded-full"
+            ></div>
+            <div class="flex flex-col w-full">
+              <p
+                style="color: #f65d83"
+                class="tracking-wide font-semibold mb-1"
+              >
+                FANTASTIC USABILITY
+              </p>
+              <p class="text-white leading-7">
+                Solet dissentias mea et. At dictas eirmod nominavi per. Ei vel
+                elitr saepe, quo graeco lobortis concludaturque te.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone Image -->
         <img
           src="./assets/img/mobile-cut.png"
           alt=""
+          style="height: 500px; width: 480px"
           class="
-            h-1/4
+            h-2/5
+            w-2/4
             absolute
             bottom-0
             left-1/2
@@ -423,6 +556,8 @@
             lg:h-2/4 lg:-translate-x-0 lg:left-0 lg:bottom-20
           "
         />
+
+        <!-- Bottom triangle separator -->
         <img
           src="./assets/img/bottom-triangle.png"
           alt=""
@@ -432,9 +567,11 @@
 
       <!-- Values section -->
       <div class="px-7 flex flex-col items-left">
-        <p class="mb-2">OUR VALUES</p>
-        <div class="h-1 w-12 bg-red-400 mb-6"></div>
-        <p class="mb-14">
+        <p class="mb-2 tracking-wide text-2xl font-extrabold text-gray-700">
+          OUR VALUES
+        </p>
+        <div class="h-1 w-16 bg-red-400 mb-6"></div>
+        <p class="mb-14 text-gray-400">
           Pro molestie voluptatum at, id qui simul mollis perfecto. Mei te
           ridens possit, ei has vide paulo vituperatoribus. Vis ea audire
           phaedrum, quis sale dicunt eam in, vim ne laoreet delicata patrioque.
@@ -448,9 +585,24 @@
 
       <!-- Testimonials section  -->
       <div class="flex flex-col items-center mt-20">
-        <p>WHY OUR CUSTOMERS RETURN TO US</p>
-        <p class="mb-2">THE TRUE STORY</p>
-        <div style="height: 3px" class="w-28 bg-gray-200 mb-4"></div>
+        <p
+          class="
+            mb-2
+            text-center
+            w-80
+            tracking-wider
+            text-2xl
+            font-extrabold
+            text-gray-700
+            md:w-auto
+          "
+        >
+          WHY OUR CUSTOMERS RETURN TO US
+        </p>
+        <p class="text-sm tracking-widest mb-2 text-gray-400 font-semibold">
+          THE TRUE STORIES
+        </p>
+        <div style="height: 2px" class="w-32 bg-gray-200 mb-4"></div>
 
         <!-- Slider -->
         <div class="glide">
@@ -459,42 +611,78 @@
               <!-- Slide 1 -->
               <li class="glide__slide">
                 <div class="p-8 flex flex-col justify-center items-center">
-                  <q class="text-3xl text-center">
+                  <q
+                    class="
+                      mb-8
+                      italic
+                      text-3xl text-center text-gray-400
+                      font-light
+                    "
+                  >
                     No dolores noluisse eos, id vim vivendum abhorreant
                     constituam. Id mea principes dissentiunt, qui et aeterno
                     aliquam conclusionemque. Ex mel omnesque patrioque
                     incorrupte, in vix cetero philosophia. Ut amet admodum usu.
                     Sit habemus gubergren at, ad eirmod feugait corrumpit his.
                   </q>
-                  <p>John Doe, Senior Designer</p>
+                  <p class="text-lg text-gray-600">
+                    <span class="text-gray-700 text-xl font-bold"
+                      >John Doe,</span
+                    >
+                    Senior Designer
+                  </p>
                 </div>
               </li>
 
               <!-- Slide 2 -->
               <li class="glide__slide">
                 <div class="p-8 flex flex-col justify-center items-center">
-                  <q class="text-3xl text-center">
+                  <q
+                    class="
+                      mb-8
+                      italic
+                      text-3xl text-center text-gray-400
+                      font-light
+                    "
+                  >
                     No dolores noluisse eos, id vim vivendum abhorreant
                     constituam. Id mea principes dissentiunt, qui et aeterno
                     aliquam conclusionemque. Ex mel omnesque patrioque
                     incorrupte, in vix cetero philosophia. Ut amet admodum usu.
                     Sit habemus gubergren at, ad eirmod feugait corrumpit his.
                   </q>
-                  <p>John Doe, Senior Designer</p>
+                  <p class="text-lg text-gray-600">
+                    <span class="text-gray-700 text-xl font-bold"
+                      >John Doe,</span
+                    >
+                    Senior Designer
+                  </p>
                 </div>
               </li>
 
               <!-- Slide 3 -->
               <li class="glide__slide">
                 <div class="p-8 flex flex-col justify-center items-center">
-                  <q class="text-3xl text-center">
+                  <q
+                    class="
+                      mb-8
+                      italic
+                      text-3xl text-center text-gray-400
+                      font-light
+                    "
+                  >
                     No dolores noluisse eos, id vim vivendum abhorreant
                     constituam. Id mea principes dissentiunt, qui et aeterno
                     aliquam conclusionemque. Ex mel omnesque patrioque
                     incorrupte, in vix cetero philosophia. Ut amet admodum usu.
                     Sit habemus gubergren at, ad eirmod feugait corrumpit his.
                   </q>
-                  <p>John Doe, Senior Designer</p>
+                  <p class="text-lg text-gray-600">
+                    <span class="text-gray-700 text-xl font-bold"
+                      >John Doe,</span
+                    >
+                    Senior Designer
+                  </p>
                 </div>
               </li>
             </ul>
@@ -509,7 +697,7 @@
       >
         <img src="./assets/img/top-triangle1.png" alt="" class="w-full" />
         <div class="flex flex-col items-center mb-28">
-          <p class="text-5xl text-center text-white mt-14 mb-10">
+          <p class="text-4xl text-center text-white mt-14 mb-10">
             See our small representational video
           </p>
           <iframe

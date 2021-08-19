@@ -5,6 +5,7 @@ function navToggle() {
   // Close drop-downs before oppening the menu
   const dropDowns = document.querySelectorAll(".dropdown");
   dropDowns.forEach((option) => option.classList.add("hidden"));
+
   nav.classList.toggle("hidden");
   mask.classList.toggle("hidden");
 }
